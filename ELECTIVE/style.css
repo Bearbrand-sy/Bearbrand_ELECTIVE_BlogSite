@@ -126,16 +126,83 @@ button:hover {
 }
 
 .box {
-  width: 360px;
-  height: 100px;
-  background: linear-gradient(to top  right, #1d3f3b, #39dacf); 
+  width: 375px;
+  height: 180px;
+  background: linear-gradient(to top  right, #08423c, #122e69); 
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 145px; 
   margin-top: 40px;
-  margin-left: 370px; 
+  margin-left: 670px; 
+  position: relative;
+  border-radius: 15px;
+  
+}
+
+.box1 {
+  width: 20px;
+  height: 120px;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin-top: 80px;
+  margin-right: 400px;
   position: absolute;
   border-radius: 15px;
+}
+
+.box2 {
+  width: 20px;
+  height: 120px;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin-top: 80px;
+  margin-inline: 20px;
+  margin-left: 20px;
+  position: absolute;
+  border-radius: 15px;
+}
+.box3 {
+  width: 20px;
+  height: 120px;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin-top: 80px;
+  margin-left: 400px;
+  position: absolute;
+  border-radius: 15px;
+}
+.container h1 {
+  font-size: large;
+  margin: 10px auto;
+  font-weight: 30;
+  line-height: 25px;
+  margin-right: 10px;
+  position: absolute;
+  margin-bottom: 400px;
+  margin-left: 10px;
+}
+.container p {
+  font-size: medium;
+  margin: 10px auto;
+  font-weight: 30;
+  line-height: 25px;
+  margin-left: 10px;
+  margin-right: 300px;
+  position: absolute;
+  margin-bottom: 300px;
+  font-family: sans-serif;
 }
