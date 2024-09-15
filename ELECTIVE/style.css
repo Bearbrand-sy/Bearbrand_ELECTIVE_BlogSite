@@ -71,6 +71,13 @@
   font-size: 30px;
   margin-top: 60px;
   margin-right: 750px;
+  text-shadow:
+    0px 0px 10px #009688,
+    0px 0px 20px #009688,
+    0px 0px 40px #08978b,
+    0px 0px 80px #08978b,
+    0px 0px 120px #08978b;
+  color: #092e2a;
 }
 
 .content p {
@@ -128,7 +135,7 @@ button:hover {
 .box {
   width: 375px;
   height: 180px;
-  background: linear-gradient(to top  right, #08423c, #06225e); 
+  background: linear-gradient(to top  right, #00858a, #05112b); 
   color: #fff;
   display: flex;
   align-items: center;
