@@ -72,13 +72,6 @@
   font-size: 30px;
   margin-top: 60px;
   margin-right: 750px;
-  text-shadow:
-    0px 0px 10px #009688,
-    0px 0px 20px #009688,
-    0px 0px 40px #08978b,
-    0px 0px 80px #08978b,
-    0px 0px 120px #08978b;
-  color: #092e2a;
 }
 
 .content p {
@@ -107,19 +100,19 @@ span {
 }
 
 .box {
-  width: 580px;
+  width: 680px;
   height: 480px;
-  background: linear-gradient(to top  right, #00858a, #05112b); 
+  background: linear-gradient(to top  right, #081e1f, #043c4d); 
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 145px; 
   margin-top: 30px;
-  margin-left: 630px; 
+  margin-left: 530px; 
   position: relative;
   border-radius: 15px;
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 10px 10px 5px rgb(28, 76, 92);
   
 }
 
@@ -192,3 +185,4 @@ span {
   margin-bottom: 300px;
   font-family: sans-serif;
 }
+
