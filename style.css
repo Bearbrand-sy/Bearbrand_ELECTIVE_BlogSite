@@ -102,7 +102,7 @@ span {
 .box {
   width: 680px;
   height: 480px;
-  background: linear-gradient(to top  right, #081e1f, #043c4d); 
+  background: linear-gradient(to top  right, #000000, #011a22); 
   color: #fff;
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@ span {
   margin-left: 530px; 
   position: relative;
   border-radius: 15px;
-  box-shadow: 10px 10px 5px rgb(28, 76, 92);
+  box-shadow: 0px 0px 10px 10px rgb(28, 76, 92);
   
 }
 
