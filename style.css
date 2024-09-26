@@ -201,3 +201,17 @@ span {
   margin-left: 4rem;
   padding-top: 2rem;
 }
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  color: white;
+  background-color: #011820;
+}
+.foot {
+  padding-top: 2rem;
+  padding-left: 33rem;
+}
+.btn{
+  margin-left: 4rem;
+}
