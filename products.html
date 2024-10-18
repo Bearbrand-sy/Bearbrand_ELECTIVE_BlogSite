@@ -8,7 +8,7 @@
     <title>Products</title>
     <style>
         body{
-    background-color: rgb(226, 226, 226);
+          background-image: linear-gradient(to top right, rgb(233, 233, 233), rgb(92, 163, 74));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
         }
@@ -24,7 +24,7 @@
             background-color: rgb(110, 219, 67);
         }
         .head{
-            height: 120vh;
+            height: 130vh;
         }
         .Search{
         width: 40%;
@@ -32,7 +32,9 @@
         margin-top: 1rem;
         margin-left: 50rem;
 
-    }
+        }
+        
+        
     </style>
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -71,81 +73,84 @@
             <h1 class="text-center" style="margin-bottom: 1.5rem;">Products </h1>
             <div class="container text-center">
                 <div class="row">
+                  <div class="col" >
+                   <div class="sort">
+                    <div class="dropdown">
+                      <a href="#" class="btn" id="category" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Sort by ≡ </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">BMX</a></li>
+                        <li><a class="dropdown-item" href="#">Mountain Bike</a></li>
+                        <li><a class="dropdown-item" href="#">E Bike</a></li>
+                      </ul>
+                    </div>             
+                   </div>
+                  </div>
                   <div class="col">
                     <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="12.png" class="card-img-top" style="height: 15rem;">
+                        <img src="12.png" class="card-img-top" style="height: 13.2rem;">
                         <div class="card-body">
-                          <h5 class="card-title">BMX 20 Punisher Ambush</h5>
-                          <p class="card-text" style="color: orangered;">Price ₱3 500</p>
-                          <a href="#" class="btn btn-primary">Buy</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">BMX 20 Punisher Ambush</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱9 500</p>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;" >
+                        <img src="bikes/13.png" class="card-img-top" style="height: 10rem;" >
+                        <div class="card-body">
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">SE Bikes x CG Big Flyer BMX Bike 2024</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱12 500</p>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="bikes/14.png" class="card-img-top">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Elite BMX Stealth BMX Bike</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱10 500</p>
                         </div>
                       </div>
                   </div>
                   <div class="col">
                     <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="bikes/15.png" class="card-img-top">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Elite BMX Destro BMX Bike</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱8 500</p>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="bikes/16.png" class="card-img-top" style="height: 11.55rem;" >
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Haro Shredder 20" BMX Bike</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱10 000</p>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <img src="bikes/18.png" class="card-img-top">
+                        <div class="card-body" style="height: 9.1rem;">
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Haro Shreeder 18" Kids Bike</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱13 800</p>
                         </div>
                       </div>
                   </div>
                   <div class="col">
                     <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="bikes/19.png" class="card-img-top" style="height: 13.2rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Haro Shreeder 18" Girls Bike</a>
+                          <p class="card-text" style="color: orangered;" >Price ₱13 800</p>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="bikes/20.png" class="card-img-top" style="height: 10.1rem; width: 16rem;" >
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Elite BMX Pee Wee 18" BMx Bike </a>
+                          <p class="card-text" style="color: orangered;" >Price ₱16 200</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem; ">
-                        <img src="..." class="card-img-top" alt="...">
+                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;  height: 21.1rem;">
+                        <img src="bikes/21.png" class="card-img-top" style="height: 13rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;"> SE Bikes Ripper BMX Bike </a>
+                          <p class="card-text" style="color: orangered;" >Price ₱13 400</p>
                         </div>
                       </div>
                   </div>
@@ -154,9 +159,17 @@
         </div>
     </div>
 </section>
+   <section class="mid">
+    <div class="mid" style="height: 60vh; background-color: darkgreen; background-image: url(back.png); background-repeat: no-repeat; background-size: cover; background-position-y: 70% ; margin-top: 18rem;">
+      <div class="mid-style" style="width: 30rem; height: 15rem; color: white; padding-top: 4rem; padding-left: 4rem; font-size: xx-large;">
+        <p>Shop A4BIKE bikes ranging in size from 20" bikes to 29" all kinds of bikes, 
+          perfect for freestyle street tricks, racing or everyday use.</p>
+      </div>
+    </div>
+   </section>
     <section class="footer">
-        <div class="footer" style="background-color: rgb(223, 223, 223); height: 25vh;">
-            <h2 class="text-center" style="margin-top: 2rem;"> Contact Us</h2>
+        <div class="footer" style="background-color: rgb(223, 223, 223); height: 30vh;">
+            <h2 class="text-center" style="margin-top: 2rem; margin-bottom: 1rem;"> Contact Us</h2>
             <div class="row">
                <div class="col" style="margin-left: 5rem;">
                    <p> Gmail Account: sanderperejan@gmail.com</p>
