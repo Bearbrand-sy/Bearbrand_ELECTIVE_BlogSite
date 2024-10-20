@@ -8,12 +8,12 @@
     <title>Website</title>
     <style>
      body{
-    background-color: rgb(226, 226, 226);
+    background-color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-
+    width: 98.8vw;
     }
     .Search{
         width: 40%;
@@ -22,37 +22,31 @@
         margin-left: 50rem;
 
     }
-    .row{
-        margin-top: 2rem;
-    }
     .col1{
-        width: 20%;
+        margin-top: 3rem;
+        width: 50rem;
         height: 12rem;
         color: white;
         backdrop-filter: blur(5px);
-        border-radius: 5px;
-        border-style: double;
-        border-color: white;
-       
-        
-        
+        border-radius: 5px;    
     }
     .col2{
         width: 10%;
     }
     .col3{
+      margin-top: 3rem;
         width: 70%;
         height: auto;
         backdrop-filter: blur(5px);
         border-radius: 5px;
         padding-bottom: 2rem;
-        border-style: double;
-        border-color: white;
+        color: white;
+        
     }
     .box1{
         height: 2rem;
         width: 110%;
-        background-color: rgb(110, 219, 67);
+        background-color: #232946;
         margin-left: -0.75rem;
         margin-bottom: 1rem;
         border-radius: 3px;
@@ -60,167 +54,213 @@
     .box2{
         height: 2rem;
         width: 102.7%;
-        background-color: rgb(110, 219, 67);
+        background-color: #232946;
         margin-left: -0.75rem;
         margin-bottom: 1rem;
         border-radius: 5px;
     }
    .head{
     height: 120vh;
-    background-image: url(back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #232946;
    }
    .head2 p {
     color: white;
    }
+  .navbar-nav .nav-link {
+    text-decoration: none; 
+    transition: text-decoration 0.4s; 
+  }
+  .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    transition-duration: 2s;
+    color: #F0E5D8; 
+  }
+  .wrapper {
+    width: 98.8vw;
+    height: 340px;
+    background-position: center;
+    background-image: url(image1.png);
+    background-size: cover;
+    animation: Bganimation 15s linear infinite;
+    transition-duration: 4s ;
+    
+}
 
+@keyframes Bganimation {
+    0% {
+        background-image: url(image1.png) ;
+    }
+    50% {
+        background-image: url(back.png) ;
+      
+    }
+    100% {
+        background-image: url(image.png);
+    }
+  }
+  .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(5, 190, 247, 1);
+   }
     </style>
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid" style=" background-color: rgb(64, 214, 64); font-size: x-large;" >
+    <div class="container-fluid" style=" background-color: #232946; font-size: x-large; color: white;" >
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: oblique;" >A4BIKE</h2>
-      <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 46rem; color: white;">
+      <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: oblique; margin-left: 1.5rem;" >A4BIKE</h2>
+      <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 44.5rem; color: white;">
         <ul class="navbar-nav">
           <li class="nav-item" style="margin-right: 1rem;">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page"  style="color: white;" href="index.html">Home</a>
           </li>
           <li class="nav-item" style="margin-right: 1rem;">
-            <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link" style="color: white;" href="products.html">Products</a>
           </li>
           <li class="nav-item" style="margin-right: 1rem;">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" style="color: white;" href="#">Services</a>
           </li>
           <li class="nav-item" style="margin-right: 1rem;">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" style="color: white;" href="#">About Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 <body>
-
-    <section class="head">
-    <div class="input-group flex-nowrap">
-        <input type="text" class="Search" placeholder="Search for product" aria-label="Username" aria-describedby="addon-wrapping">
-        <button type="button" class="btn btn-primary" style="height: 2.5rem; margin-top: 1rem; margin-left: 0.5rem; margin-right: 2rem; border-radius: 10px;">Search</button>
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col1">
-            <div class="box1">
-              <h4 style="color: black;">Category</h4>
-            </div>
-            <div class="category">              
-                <form>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="subscribe" value="Haru" id="haru">
-                        <label class="form-check-label" for="bike">BMX bike</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="subscribe" value="Kumi" id="kumi">
-                        <label class="form-check-label" for="mountain">Mountain Bike</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="subscribe" value="Mako" id="mako">
-                        <label class="form-check-label" for="ebike">E Bike</label>
-                    </div>
-                </form>
-            </div>
-          </div>
+      <div class="wrapper">
+        <div class="input-group flex-nowrap">
+          <input type="text" class="Search" placeholder="Search for product" aria-label="Username" aria-describedby="addon-wrapping" style="border-color: white; border-radius: 20px;">
+          <button type="button" class="btn" style="height: 2.5rem; margin-top: 1rem; margin-left: 0.5rem; margin-right: 2rem; border-radius: 10px; background-color: #232946; color: white;">Search</button>
           
-          <div class="col2">
-            
-          </div>
-          <div class="col3">
-            <div class="box2">
-              <h5 class="sale" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">HOT SALE</h5>
-            </div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 14rem;">
-                            <img src="5.png" height="136rem"  class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">BMX</h5>
-                                <p class="card-text">This is BMX bike.</p>
-                                <p class="card-text">Price: ₱8 000</p>
-                                <a href="#" class="btn btn-primary">Buy</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 14rem;">
-                            <img src="3.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Mountain Bike</h5>
-                                <p class="card-text">This is Mountain Bike</p>
-                                <p class="card-text">Price: ₱12 000</p>
-                                <a href="#" class="btn btn-primary">Buy</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 14rem;">
-                            <img src="4.png" class="card-img-top" >
-                            <div class="card-body">
-                                <h5 class="card-title">E Bike</h5>
-                                <p class="card-text">This is E Bike</p>
-                                <p class="card-text">Price: ₱42 000</p>
-                                <a href="#" class="btn btn-primary">Buy</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div class="detail" style="width: 25rem; color: white; margin-left: 3rem;">
+          <h2>Our passion for biking drives us to create a welcoming environment for riders of all levels, from beginners to seasoned pros.</h2>
         </div>
       </div>
-    </section>   
+      <section class="head">
+        <div class="s" style="width: 100%; height: 1rem; background-color: white;"></div>
+        <div class="container text-center" style="margin-left: 8rem;">
+          <div class="row">
+            <div class="box2">
+              <h1 style="color: white; margin-top: 1rem; font-weight: bold;
+              text-shadow: 2px 2px 4px rgba(255, 255, 255, ),2px 2px 10px rgba(0, 0, 0, 0.5);">HOT SALE</h1>
+            </div>
+            <div class="flex-container" style="margin-top: 3rem;">
+              <div class="row">
+                <div class="col">
+                  <a href="payment.html" class="card" style="width: 18rem; text-decoration: none;">
+                    <img src="5.png" style="height: 10rem; width: 15rem; margin-left: 1.2rem;" class="card-img-top">
+                    <div class="card-body" style="height: 10rem;">
+                      <h5 style="font-weight: bold; color: black;">BMX 20 Punisher Ambush</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱8,000</p>
+                    </div>
+                  </a>
+                  <a href="payment.html" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                    <img src="bikes/23.png" class="card-img-top" style="height: 10.6rem;">
+                    <div class="card-body" style="height: 9rem;">
+                      <h5 style="font-weight: bold; color: black;">Haro Flightine One 27.5" ST Mountain Bike 2023</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱22,800</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="payment.html" class="card" style="width: 18rem; text-decoration: none;">
+                    <img src="3.png" class="card-img-top">
+                    <div class="card-body" style="height: 9rem;">
+                      <h5 style="font-weight: bold; color: black;">Fuji Wendigo 1.1 Mountain Bike</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱19,500</p>
+                    </div>
+                  </a>
+                  <a href="payment.html" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                    <img src="bikes/24.png" class="card-img-top">
+                    <div class="card-body" style="height: 9rem;">
+                      <h5 style="font-weight: bold; color: black;">SE Bikes DJ Ripper HD 26" Mountain Bike</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱21,300</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="payment.html" class="card" style="width: 18rem; text-decoration: none;">
+                    <img src="4.png" class="card-img-top">
+                    <div class="card-body" style="height: 9rem;">
+                      <h5 style="font-weight: bold; color: black;">Wendigo 1.8 E Bike</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱36,800</p>
+                    </div>
+                  </a>
+                  <a href="payment.html" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                    <img src="bikes/27.png" class="card-img-top" style="height: 10.6rem;">
+                    <div class="card-body" style="height: 9rem;">
+                      <h5 style="font-weight: bold; color: black;">Fuji Rakan 29 1.7 Mountain Bike</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱32,800</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="payment.html" class="card" style="width: 18rem; text-decoration: none;">
+                    <img src="bikes/16.png" class="card-img-top" style="height: 11rem;">
+                    <div class="card-body" style="height: 9rem;">
+                      <h5 style="font-weight: bold; color: black;">Haro Shredder 20" BMX Bike</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱10,000</p>
+                    </div>
+                  </a>
+                  <a href="payment.html" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                    <img src="bikes/13.png" class="card-img-top" style="height: 10.7rem;">
+                    <div class="card-body" style="height: 8.8rem;" >
+                      <h5 style="font-weight: bold; color: black;">SE Bikes x CG Big Flyer BMX Bike 2024</h5>
+                      <p class="card-text" style="color: orangered;">Price: ₱12,500</p>
+                    </div>
+                  </a>
+                </div>
+              </div>                
+            </div>          
+          </div>   
+        </div>
+      </section>      
       <section class="head2">
-        <div class="service" style="background-color:  rgb(88, 204, 88); height: 50vh; padding-top: 2rem; ">
-
+        <div class="service" style="background-color:  white; height: 50vh; padding-top: 2rem; ">
           <h2 class="text-center" style=" color: white;">HAPPY SHOPPING in A4BIKE</h2>
-          <div class="container text-center">
+          <div class="flex-container text-center">
             <div class="row">
               <div class="col">
-                   <img src="6.png" alt=""> 
-                   <p>Credit Card
+                   <img src="6.png" alt="" > 
+                   <p style="color: rgb(0, 0, 0);">Credit Card
                     Paymaya , Gcash, BDO
                    </p>
               </div>
               <div class="col">
                 <img src="7.png" alt="">
-                <p>More than 100 Stores and Service Centers in Visayas, Mindanao and Palawan</p>
+                <p style="color: rgb(0, 0, 0);">More than 100 Stores and Service Centers in Visayas, Mindanao and Palawan</p>
               </div>
               <div class="col">
                 <img src="8.png" alt="">
-                <p>Customer Service</p>
-                <p>customer.service@gmail.com</p>
+                <p style="color: rgb(0, 0, 0);">Customer Service <br> customer.service@gmail.com </p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="footer">
-        <div class="footer" style="background-color: rgb(223, 223, 223); height: 25vh;">
-             <h2 class="text-center" style="margin-top: 2rem;"> Contact Us</h2>
+        <div class="footer" style="background-color: #232946; height: 35vh;">
+             <h2 class="text-center" style="padding-top: 1rem; color: white;" > Contact Us</h2>
              <div class="row">
-                <div class="col" style="margin-left: 5rem;">
+                <div class="col" style="margin-left: 5rem; color: white;">
                     <p> Gmail Account: sanderperejan@gmail.com</p>
                     <p> Facebook Account: sander.cordova@yahoo.com</p>
                     <p> Instagram Account: sander.cordova@yahoo.com</p>
 
                 </div>
-                <div class="col">
+                <div class="col" style="padding-top: 1rem; padding-left: 5rem; ">
                     <img src="9.png" alt="" style="height: 5rem; width: 5rem;">
                     <img src="10.png" alt="" style="height: 5rem; width: 5rem; margin-left: 1rem;" >
                     <img src="11.png" alt="" style="height: 5rem; width: 5rem; margin-left: 1rem;">
                 </div>
-                <div class="col" style="color: gray; padding-right: 2rem;">
+                <div class="col" style="color: rgb(160, 160, 160); padding-right: 2rem;">
                   <p>A4BIKE Incorporated – Head Office
                     LAB1 Bldg., S. P. NBSC.,
                     Manolo Fortich, Philippines 87000</p>
