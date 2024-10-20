@@ -8,7 +8,7 @@
     <title>Products</title>
     <style>
         body{
-          background-image: linear-gradient(to top right, rgb(233, 233, 233), rgb(92, 163, 74));
+    background-color: #232946;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
         }
@@ -24,7 +24,8 @@
             background-color: rgb(110, 219, 67);
         }
         .head{
-            height: 130vh;
+            height: 110vh;
+            background-color: #232946;
         }
         .Search{
         width: 40%;
@@ -37,10 +38,19 @@
         transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .card:hover {
+       .card:hover {
         transform: scale(1.05);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 15px rgba(5, 190, 247, 1);
         }
+        .navbar-nav .nav-link {
+        text-decoration: none; 
+        transition: text-decoration 0.4s; 
+        }
+        .navbar-nav .nav-link:hover {
+         text-decoration: underline;
+         transition-duration: 2s;
+         color: #F0E5D8; 
+         }
         
     </style>
 </head>
@@ -69,103 +79,132 @@
   </div>
 </nav>
 <body>
-    <div class="input-group flex-nowrap">
-        <input type="text" class="Search" placeholder="Search for product" aria-label="Username" aria-describedby="addon-wrapping">
-        <button type="button" class="btn btn-primary" style="height: 2.5rem; margin-top: 1rem; margin-left: 0.5rem; margin-right: 2rem; border-radius: 10px;">Search</button>
-      </div>
+  <section class="marq" style="height: 5rem; color: white; background-color: white; font-size: xx-large; background-image: url(back.png); background-position-y: 61% ; padding-top: 1rem;">
+    <div>
+      <marquee behavior="scroll" direction="left">
+        Shop here for the best deals on top-quality bikes and  to elevate your cycling experience!
+      </marquee>
+    </div>
+    
+  </section>
+  <div class="input-group flex-nowrap" style="margin-top: 1rem;">
+    <input type="text" class="Search" placeholder="Search for product" aria-label="Username" aria-describedby="addon-wrapping" style="border-color: white; border-radius: 20px;">
+    <button type="button" class="btn" style="height: 2.5rem; margin-top: 1rem; margin-left: 0.5rem; margin-right: 2rem; border-radius: 10px; background-color: #ffffff; color: rgb(0, 0, 0);">Search</button>
+    </div>
 
     <section class="head">
-    <div class="products">
-        <div class="bikes" style="margin-top: 2rem;">
-            <h1 class="text-center" style="margin-bottom: 1.5rem;">Products </h1>
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col" >
-                   <div class="sort">
-                    <div class="dropdown">
-                      <a href="#" class="btn" id="category" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Sort by ≡ </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="products.html">BMX</a></li>
-                        <li><a class="dropdown-item" href="mountain.html">Mountain Bike</a></li>
-                        <li><a class="dropdown-item" href="#">E Bike</a></li>
-                      </ul>
-                    </div>             
-                   </div>
+      <div class="products">
+          <div class="bikes" style="margin-top: 2rem;">
+              <h1 class="text-center" style="margin-bottom: 1.5rem; color: white;">Products</h1>
+              <div class="container text-center">
+                  <div class="row">
+                      <div class="col" style="margin-right: 2rem;">
+                          <div class="sort">
+                              <div class="dropdown">
+                                  <a href="#" class="btn" id="category" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: xx-large; margin-top: 4rem;">Sort by ≡</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="products.html"> • BMX</a></li>
+                                      <li><a class="dropdown-item" href="mountain.html"> • Mountain Bike</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="" style="height: 50rem; background-image: url(back.png); filter: opacity(80%); filter: brightness(80%); padding-left: 3rem; padding-top: 0.5rem; background-position-x: 75% ; "> 
+                            <p style=" margin-top: 10rem; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: xx-large; margin-right: 2rem;">Explore our wide range of high- performance bikes designed to meet the needs of every rider, from casual cyclists to serious enthusiasts.</p>
+                          </div>
+                        </div>
+                      <div class="col">
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem; cursor: pointer;">
+                                  <img src="bikes/22.png" class="card-img-top" style="height: 13.2rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Fuji Wendigo 1.1 Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱19,500</p>
+                                  </div>
+                              </div>
+                          </a>
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem; cursor: pointer;">
+                                  <img src="bikes/23.png" class="card-img-top" style="height: 10rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Haro Flightine One 27.5" ST Mountain Bike 2023</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱22,800</p>
+                                  </div>
+                              </div>
+                          </a>
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem; cursor: pointer;">
+                                  <img src="bikes/24.png" class="card-img-top">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">SE Bikes DJ Ripper HD 26" Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱21,300</p>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col">
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem; cursor: pointer;">
+                                  <img src="bikes/25.png" class="card-img-top" style="height: 12rem; margin-top: 1rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Haro Saguaro 1 Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱24,200</p>
+                                  </div>
+                              </div>
+                          </a>
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
+                                  <img src="bikes/26.png" class="card-img-top" style="height: 10rem; width: 15rem; margin-left: 1.5rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Fuji Nevada 27.5 1.5 Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱26,400</p>
+                                  </div>
+                              </div>
+                          </a>
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
+                                  <img src="bikes/27.png" class="card-img-top" style="height: 10.8rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Fuji Rakan 29 1.7 Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱32,800</p>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col">
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
+                                  <img src="bikes/28.png" class="card-img-top" style="height: 13rem; width: 16rem; margin-left: 1rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Fuji Nevada 29 1.5 Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱30,350</p>
+                                  </div>
+                              </div>
+                          </a>
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
+                                  <img src="bikes/29.png" class="card-img-top" style="height: 10.1rem; width: 16rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Fuji Absolute 2.1 ST Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱29,400</p>
+                                  </div>
+                              </div>
+                          </a>
+                          <a href="payment.html" style="text-decoration: none; color: inherit;">
+                              <div class="card" style="width: 18rem; margin-bottom: 1.5rem; height: 18.3rem;">
+                                  <img src="bikes/30.png" class="card-img-top" style="height: 11rem;">
+                                  <div class="card-body">
+                                      <h5 style="font-weight: bold;">Haro Flightline 20" Plus Kids Mountain Bike</h5>
+                                      <p class="card-text" style="color: orangered;">Price ₱24,899</p>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
                   </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/22.png" class="card-img-top" style="height: 13.2rem;">
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Fuji Wendigo 1.1 Mountain Bike</a>
-                          <p class="card-text" style="color: orangered;" >Price ₱19 500</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;" >
-                        <img src="bikes/23.png" class="card-img-top" style="height: 10rem;" >
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Haro Flightine One 27.5" ST Mountain Bike 2023</a>
-                          <p class="card-text" style="color: orangered;" >Price ₱22 800</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/24.png" class="card-img-top">
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">SE Bikes DJ Ripper HD 26" Mountain Bike</a>
-                          <p class="card-text" style="color: orangered;" >Price ₱21 300</p>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/25.png" class="card-img-top" style="height: 12rem; margin-top: 1rem;">
-                        <div class="card-body" style="height: 7.5rem;">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Haro Saguaro 1 Mountain Bike</a>
-                          <p class="card-text" style="color: orangered;" >Price ₱24 200</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/26.png" class="card-img-top" style="height: 10rem; width: 15rem; margin-left: 1.5rem;" >
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Fuji Nevada  27.5 1.5 Mountain Bike</a>
-                          <p class="card-text" style="color: orangered;" >Price ₱26 400</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/27.png" class="card-img-top" style="height: 10.8rem;">
-                        <div class="card-body" >
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Fuji Rakan 29 1.7 Mountain Bike </a>
-                          <p class="card-text" style="color: orangered;" >Price ₱32 800</p>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/28.png" class="card-img-top" style="height: 13rem; width: 16rem; margin-left: 1rem;" >
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Fuji Nevada  29 1.5 Mountain Bike</a>
-                          <p class="card-text" style="color: orangered;" >Price ₱30 350</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                        <img src="bikes/29.png" class="card-img-top" style="height: 10.1rem; width: 16rem;" >
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;">Fuji Absolute 2.1 ST Mountain Bike </a>
-                          <p class="card-text" style="color: orangered;" >Price ₱29 400</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem; margin-bottom: 1.5rem;  height: 18.3rem;">
-                        <img src="bikes/30.png" class="card-img-top" style="height: 11rem;" class="btn">
-                        <div class="card-body">
-                          <a href="payment.html" class="btn" id="buy" style="font-weight: bold;"> Haro Flightline 20" Plus Kids Mountain Bike </a>
-                          <p class="card-text" style="color: orangered;" >Price ₱24 899</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
               </div>
-        </div>
-    </div>
-</section>
+          </div>
+      </div>
+  </section>
+  
    <section class="mid">
     <div class="mid" style="height: 60vh; background-color: darkgreen; background-image: url(back.png); background-repeat: no-repeat; background-size: cover; background-position-y: 70% ; margin-top: 18rem;">
       <div class="mid-style" style="width: 30rem; height: 15rem; color: white; padding-top: 4rem; padding-left: 4rem; font-size: xx-large;">
@@ -175,21 +214,21 @@
     </div>
    </section>
     <section class="footer">
-        <div class="footer" style="background-color: rgb(223, 223, 223); height: 30vh;">
-            <h2 class="text-center" style="margin-top: 2rem; margin-bottom: 1rem;"> Contact Us</h2>
+        <div class="footer" style="background-color: #232946; height: 30vh;">
+            <h2 class="text-center" style="margin-top: 2rem; margin-bottom: 1rem; color: white;"> Contact Us</h2>
             <div class="row">
-               <div class="col" style="margin-left: 5rem;">
+               <div class="col" style="margin-left: 5rem; color: white;">
                    <p> Gmail Account: sanderperejan@gmail.com</p>
                    <p> Facebook Account: sander.cordova@yahoo.com</p>
                    <p> Instagram Account: sander.cordova@yahoo.com</p>
 
                </div>
-               <div class="col">
+               <div class="col" style="padding-left: 5rem;">
                    <img src="9.png" alt="" style="height: 5rem; width: 5rem;">
                    <img src="10.png" alt="" style="height: 5rem; width: 5rem; margin-left: 1rem;" >
                    <img src="11.png" alt="" style="height: 5rem; width: 5rem; margin-left: 1rem;">
                </div>
-               <div class="col" style="color: gray; padding-right: 2rem;">
+               <div class="col" style="color: rgb(179, 179, 179); padding-right: 2rem;">
                  <p>A4BIKE Incorporated – Head Office
                    LAB1 Bldg., S. P. NBSC.,
                    Manolo Fortich, Philippines 87000</p>

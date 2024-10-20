@@ -37,12 +37,12 @@
         }
         .card {
         transition: transform 0.3s, box-shadow 0.3s;
-  }
+        }
 
-  .card:hover {
+        .card:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 15px rgba(5, 190, 247, 1);
-   }
+        }
         .navbar-nav .nav-link {
         text-decoration: none; 
         transition: text-decoration 0.4s; 
@@ -99,20 +99,22 @@
                 <h1 class="text-center" style="margin-bottom: 1.5rem; color: white;">Products</h1>
                 <div class="container text-center">
                     <div class="row">
-                        <div class="col">
+                        <div class="col" style="margin-right: 2rem;">
                             <div class="sort">
                                 <div class="dropdown">
                                     <a href="#" class="btn" id="category" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: xx-large; margin-top: 4rem;"> Sort by ≡ </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="products.html">BMX</a></li>
-                                        <li><a class="dropdown-item" href="mountain.html">Mountain Bike</a></li>
+                                        <li><a class="dropdown-item" href="products.html"> • BMX</a></li>
+                                        <li><a class="dropdown-item" href="mountain.html"> • Mountain Bike</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <p style="text-align: justify; margin-top: 4rem; color: white; font-size: x-large; margin-right: 2rem;">Explore our wide range of high-performance bikes designed to meet the needs of every rider, from casual cyclists to serious enthusiasts.</p>
+                            <div class="" style="height: 50rem; background-image: url(back.png); filter: opacity(80%); filter: brightness(80%); padding-left: 3rem; padding-top: 0.5rem; background-position-x: 75% ; "> 
+                              <p style=" margin-top: 10rem; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: xx-large; margin-right: 2rem;">Explore our wide range of high- performance bikes designed to meet the needs of every rider, from casual cyclists to serious enthusiasts.</p>
+                            </div>
                         </div>
                         <div class="col">
-                            <a href="payment.html" class="card" style="width: 18rem; margin-bottom: 1.5rem; text-decoration: none;">
+                            <a href="payment.html" id="BMX20" class="card" style="width: 18rem; margin-bottom: 1.5rem; text-decoration: none;">
                                 <img src="12.png" class="card-img-top" style="height: 13.2rem;">
                                 <div class="card-body" style="height: 8rem;">
                                     <h5 style="font-weight: bold; color: black;">BMX 20 Punisher Ambush</h5>
