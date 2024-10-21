@@ -52,7 +52,46 @@
          transition-duration: 2s;
          color: #F0E5D8; 
          }
-        
+         .modal {
+            display: none; 
+            position: fixed; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%; 
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary:hover {
+            background-color: darkred;
+        }
     </style>
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -102,14 +141,14 @@
                         <div class="col" style="margin-right: 2rem;">
                             <div class="sort">
                                 <div class="dropdown">
-                                    <a href="#" class="btn" id="category" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: xx-large; margin-top: 4rem;"> Sort by ≡ </a>
+                                    <a href="#" class="btn" id="category" type="button" style="color: white; font-size: xx-large; margin-top: 4rem;"> Sort by ≡ </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="products.html"> • BMX</a></li>
                                         <li><a class="dropdown-item" href="mountain.html"> • Mountain Bike</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div style="height: 50rem; background-image: url(back.png); filter: opacity(80%); filter: brightness(80%); padding-left: 3rem; padding-top: 0.5rem; background-position-x: 75%;">
+                            <div style="height: 50rem; background-image: url(back.png); filter: brightness(80%); padding-left: 3rem; padding-top: 0.5rem; background-position-x: 75%;">
                                 <p style="margin-top: 10rem; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: xx-large; margin-right: 2rem;">
                                     Explore our wide range of high-performance bikes designed to meet the needs of every rider, from casual cyclists to serious enthusiasts.
                                 </p>
@@ -190,6 +229,16 @@
         </div>
     </section>
     
+    <div id="bikeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Product Details</h2>
+            <img id="modal-image" src="" alt="Product Image" style="width: 40%; height: 40%; margin-left: 8rem;">
+            <div id="modal-description" style="color: orangered;"></div>
+            <button id="go-to-payment" class="btn btn-primary">Go to Payment</button>
+        </div>
+    </div>
+    
     
    <section class="mid">
     <div class="mid" style="padding-top: 4rem; height: 58vh; background-color: darkgreen; background-image: url(back.png); background-repeat: no-repeat; background-size: cover; background-position-y: 70% ; margin-top: 18rem;">
@@ -223,4 +272,39 @@
        </div>  
     </section>
 </body>
+<script>
+    function openBikeModal(title, image, description, paymentUrl) {
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-image').src = image;
+        document.getElementById('modal-description').innerHTML = description;
+        document.getElementById('go-to-payment').onclick = function() {
+            window.location.href = paymentUrl; 
+        };
+        document.getElementById('bikeModal').style.display = 'block'; 
+    }
+
+
+    document.getElementsByClassName("close")[0].onclick = function() {
+        document.getElementById('bikeModal').style.display = "none";
+    };
+
+    document.querySelectorAll('.card').forEach(card => {
+        card.onclick = function(event) {
+            event.preventDefault(); 
+            const title = this.querySelector('h5').innerText;
+            const image = this.querySelector('img').src;
+            const description = this.querySelector('.card-text').innerText;
+            const paymentUrl = this.href; 
+
+            openBikeModal(title, image, description, paymentUrl);
+        };
+    });
+
+    window.onclick = function(event) {
+        const modal = document.getElementById('bikeModal');
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
 </html>

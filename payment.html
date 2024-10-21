@@ -133,7 +133,7 @@
                 <p style="color: green;">You have selected Cash on Delivery.</p>
             </div>
 
-            <button id="submit">Complete Purchase</button>
+            <button id="sumbit">Complete Purchase</button>
         </form>
     </div>
 </div>
@@ -179,7 +179,7 @@
   }
 
   function handleSubmit(event) {
-      event.preventDefault(); 
+      event.preventDefault(); // Prevent form submission
 
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
@@ -201,11 +201,16 @@
 
       if (confirmPurchase) {
           alert(`Purchase Complete!\nName: ${name}\nEmail: ${email}\nAddress: ${address}\nPhone: ${phone}\nPayment Method: ${paymentMethod}${additionalInfo}`);
+          // Proceed with purchase logic here (e.g., send data to server)
       } else {
           alert('Purchase canceled.');
       }
   }
-  document.getElementById('payment-form').addEventListener('submit', handleSubmit);
+
+  // Attach event listeners
+  document.getElementById('payment-form').addEventListener('complet-purchase', handleSubmit);
+
+  // Call to display the selected product
   displaySelectedProduct();
 </script>
 </body>
