@@ -107,6 +107,47 @@
         transform: scale(1.05);
         box-shadow: 0 4px 15px rgba(5, 190, 247, 1);
    }
+   .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%; 
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary:hover {
+            background-color: darkred;
+        }
     </style>
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -154,14 +195,14 @@
                 <div class="flex-container" style="margin-top: 3rem;">
                     <div class="row">
                         <div class="col">
-                            <a href="payment.html?product=bmx_20_punisher&name=BMX%2020%20Punisher%20Ambush&price=8000" class="card" style="width: 18rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="BMX 20 Punisher Ambush" data-price="₱8,000" data-image="5.png" data-payment="payment.html?product=bmx_20_punisher&name=BMX%2020%20Punisher%20Ambush&price=8000" style="width: 18rem; text-decoration: none;">
                                 <img src="5.png" style="height: 10rem; width: 15rem; margin-left: 1.2rem;" class="card-img-top">
                                 <div class="card-body" style="height: 10rem;">
                                     <h5 style="font-weight: bold; color: black;">BMX 20 Punisher Ambush</h5>
                                     <p class="card-text" style="color: orangered;">Price: ₱8,000</p>
                                 </div>
                             </a>
-                            <a href="payment.html?product=haro_flightline_2023&name=Haro%20Flightine%20One%2027.5%22%20ST%20Mountain%20Bike%202023&price=22800" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="Haro Flightine One 27.5\" ST Mountain Bike 2023" data-price="₱22,800" data-image="bikes/23.png" data-payment="payment.html?product=haro_flightline_2023&name=Haro%20Flightine%20One%2027.5%22%20ST%20Mountain%20Bike%202023&price=22800" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
                                 <img src="bikes/23.png" class="card-img-top" style="height: 10.6rem;">
                                 <div class="card-body" style="height: 9rem;">
                                     <h5 style="font-weight: bold; color: black;">Haro Flightine One 27.5" ST Mountain Bike 2023</h5>
@@ -170,14 +211,14 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="payment.html?product=fuji_wendigo&name=Fuji%20Wendigo%201.1%20Mountain%20Bike&price=19500" class="card" style="width: 18rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="Fuji Wendigo 1.1 Mountain Bike" data-price="₱19,500" data-image="3.png" data-payment="payment.html?product=fuji_wendigo&name=Fuji%20Wendigo%201.1%20Mountain%20Bike&price=19500" style="width: 18rem; text-decoration: none;">
                                 <img src="3.png" class="card-img-top">
                                 <div class="card-body" style="height: 9rem;">
                                     <h5 style="font-weight: bold; color: black;">Fuji Wendigo 1.1 Mountain Bike</h5>
                                     <p class="card-text" style="color: orangered;">Price: ₱19,500</p>
                                 </div>
                             </a>
-                            <a href="payment.html?product=se_bikes_dj_ripper&name=SE%20Bikes%20DJ%20Ripper%20HD%2026%22%20Mountain%20Bike&price=21300" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="SE Bikes DJ Ripper HD 26\" Mountain Bike" data-price="₱21,300" data-image="bikes/24.png" data-payment="payment.html?product=se_bikes_dj_ripper&name=SE%20Bikes%20DJ%20Ripper%20HD%2026%22%20Mountain%20Bike&price=21300" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
                                 <img src="bikes/24.png" class="card-img-top">
                                 <div class="card-body" style="height: 9rem;">
                                     <h5 style="font-weight: bold; color: black;">SE Bikes DJ Ripper HD 26" Mountain Bike</h5>
@@ -186,14 +227,14 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="payment.html?product=wendigo_1_8&name=Wendigo%201.8%20E%20Bike&price=36800" class="card" style="width: 18rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="Wendigo 1.8 E Bike" data-price="₱36,800" data-image="4.png" data-payment="payment.html?product=wendigo_1_8&name=Wendigo%201.8%20E%20Bike&price=36800" style="width: 18rem; text-decoration: none;">
                                 <img src="4.png" class="card-img-top">
                                 <div class="card-body" style="height: 9rem;">
                                     <h5 style="font-weight: bold; color: black;">Wendigo 1.8 E Bike</h5>
                                     <p class="card-text" style="color: orangered;">Price: ₱36,800</p>
                                 </div>
                             </a>
-                            <a href="payment.html?product=fuji_rakan&name=Fuji%20Rakan%2029%201.7%20Mountain%20Bike&price=32800" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="Fuji Rakan 29 1.7 Mountain Bike" data-price="₱32,800" data-image="bikes/27.png" data-payment="payment.html?product=fuji_rakan&name=Fuji%20Rakan%2029%201.7%20Mountain%20Bike&price=32800" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
                                 <img src="bikes/27.png" class="card-img-top" style="height: 10.6rem;">
                                 <div class="card-body" style="height: 9rem;">
                                     <h5 style="font-weight: bold; color: black;">Fuji Rakan 29 1.7 Mountain Bike</h5>
@@ -202,14 +243,14 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="payment.html?product=haro_shredder&name=Haro%20Shredder%2020%22%20BMX%20Bike&price=10000" class="card" style="width: 18rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="Haro Shredder 20\" BMX Bike" data-price="₱10,000" data-image="bikes/16.png" data-payment="payment.html?product=haro_shredder&name=Haro%20Shredder%2020%22%20BMX%20Bike&price=10000" style="width: 18rem; text-decoration: none;">
                                 <img src="bikes/16.png" class="card-img-top" style="height: 11rem;">
                                 <div class="card-body" style="height: 9rem;">
                                     <h5 style="font-weight: bold; color: black;">Haro Shredder 20" BMX Bike</h5>
                                     <p class="card-text" style="color: orangered;">Price: ₱10,000</p>
                                 </div>
                             </a>
-                            <a href="payment.html?product=se_bikes_xcg&name=SE%20Bikes%20x%20CG%20Big%20Flyer%20BMX%20Bike%202024&price=12500" class="card" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
+                            <a href="#" class="card" data-name="SE Bikes x CG Big Flyer BMX Bike 2024" data-price="₱12,500" data-image="bikes/13.png" data-payment="payment.html?product=se_bikes_xcg&name=SE%20Bikes%20x%20CG%20Big%20Flyer%20BMX%20Bike%202024&price=12500" style="width: 18rem; margin-top: 4rem; text-decoration: none;">
                                 <img src="bikes/13.png" class="card-img-top" style="height: 10.7rem;">
                                 <div class="card-body" style="height: 8.8rem;">
                                     <h5 style="font-weight: bold; color: black;">SE Bikes x CG Big Flyer BMX Bike 2024</h5>
@@ -221,7 +262,18 @@
                 </div>
             </div>
         </div>
-      </section>      
+    </section>
+    
+    <!-- Modal Structure -->
+    <div id="bikeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Product Details</h2>
+            <img id="modal-image" src="" alt="Product Image" style="width: 40%; height: 40%; margin-left: 8rem;">
+            <div id="modal-description" style="color: orangered;"></div>
+            <button id="go-to-payment" class="btn btn-primary">Go to Payment</button>
+        </div>
+    </div>   
       <section class="head2">
         <div class="service" style="background-color:  white; height: 50vh; padding-top: 2rem; ">
           <h2 class="text-center" style=" color: white;">HAPPY SHOPPING in A4BIKE</h2>
@@ -269,5 +321,42 @@
         </div>  
     </section>
 </body>
-<script src="script.js"></script>
+<script>
+  function openBikeModal(title, image, price, paymentUrl) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-image').src = image;
+      document.getElementById('modal-description').innerHTML = `Price: ${price}`;
+      document.getElementById('go-to-payment').onclick = function() {
+          window.location.href = paymentUrl; 
+      };
+      document.getElementById('bikeModal').style.display = 'block'; 
+  }
+
+ 
+  document.getElementsByClassName("close")[0].onclick = function() {
+      document.getElementById('bikeModal').style.display = "none";
+  };
+
+  
+  document.querySelectorAll('.card').forEach(card => {
+      card.onclick = function(event) {
+          event.preventDefault(); 
+          const title = this.getAttribute('data-name');
+          const image = this.getAttribute('data-image');
+          const price = this.getAttribute('data-price');
+          const paymentUrl = this.getAttribute('data-payment'); 
+
+          openBikeModal(title, image, price, paymentUrl);
+      };
+  });
+
+
+  window.onclick = function(event) {
+      const modal = document.getElementById('bikeModal');
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+  };
+</script>
+
 </html>
